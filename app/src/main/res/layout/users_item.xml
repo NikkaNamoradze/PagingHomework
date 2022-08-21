@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="email"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/uiImage"
+        app:layout_constraintTop_toTopOf="@+id/uiImage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiFirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="firstname"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/uiEmail"
+        app:layout_constraintTop_toBottomOf="@+id/uiEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/uiLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="lastname"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/uiFirstname"
+        app:layout_constraintTop_toBottomOf="@+id/uiFirstname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
